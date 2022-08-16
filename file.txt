@@ -1,0 +1,18 @@
+GitHub repository :
+*Storage space for Project
+*Central repository to store the files.
+*Push our local repo into central repository ,so other developers can work on the project simultaneously
+
+By clicking the new Repository option , we create a new repository to store the files.
+-- once repository is created , and we want to get the project into our local repository , 
+ 
+      click code - copy the URL -- paste on the Git terminal
+                       - we can download the project files in the zip folder format
+                       - we can also get to the github desktop 
+suppose we create the READme file , once we click on it , it will take us to a new page, where we can see the contributors,history (changes in the file).
+
+create a branch::(branch is the replica of the master branch)
+Master branch : our project will reside on the master branch. if we want to work on the features which are included in the master branch.
+*we do the experiments on branches , if they are working properly we merge with the main branch (master branch) 
+Make a commit:
+
