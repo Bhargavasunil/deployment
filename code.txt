@@ -1,0 +1,37 @@
+/*****************************************************************************************************************************
+ Author:bhargavasunilmallavolu@gmail.com
+ Company:CloudFulcrum
+ Description: Remove duplicate elements from an array
+ =============================================================================================================================
+ =============================================================================================================================
+Apex Class: RemoveDuplicateElementsInArray
+Test Class :
+Trigger used :
+Test Data Factory Class : 
+Code Coverage : 
+ ==============================================================================================================================
+ =============================================================================================================================
+ History
+ <Version>       <Date>                       <Author Name>                     <Brief description of change >
+                              
+ ************************************************************************************************************************/
+
+public class RemoveDuplicateElementsInArray {
+    public static void removeDuplicates(){
+        //declaring array
+        integer[] sourcearray = new integer[]{1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7};
+        //creating another array to store the elements of an array with out duplcates
+        set<integer> tempSet = new set<integer>();  
+        string printNewArrays = '';
+        for(integer i=0;i<sourcearray.size();i++){
+             printNewArrays = printNewArrays+sourcearray[i]+'';
+        }
+        system.debug('printNewArrays'+printNewArrays);
+        for(integer i=0;i<sourcearray.size()-1;i++){
+            if(sourcearray[i]!=sourcearray[i+1]){
+                tempSet.add(i);
+            }
+            system.debug(tempset);  //prints the array without duplicates.
+        }
+    }
+}
